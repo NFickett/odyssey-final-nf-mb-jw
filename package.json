@@ -1,0 +1,23 @@
+{
+  "name": "odyssey-final-nf-mb-jw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NFickett/odyssey-final-nf-mb-jw.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NFickett/odyssey-final-nf-mb-jw/issues"
+  },
+  "homepage": "https://github.com/NFickett/odyssey-final-nf-mb-jw#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {}
+}
