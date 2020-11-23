@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Odyssey</title>
+    <script src = 'libs/previous-matches.js'></script>
+</head>
+<body onload = "loadLeagues()">
+    <h1>Home Page</h1>
+    <h3>League select</h3>
+    <select id = "leaguesSelect" onchange="loadSeries()"> </select>
+    <div id = "leagueInfo"></div>
+
+    <h3>Series Select</h3>
+    <select id = "seriesSelect" onchange="loadTournaments()"> </select>
+    <div id = "seriesInfo"></div>
+
+    <h3>Tournament Select</h3>
+    <select id = "tournamentSelect" onchange="loadMatches()"> </select>
+    <div id = "tournamentInfo"></div>
+
+    <h3>Matches</h3>
+    <div id = "matcheStatus"></div>
+    <div id = "matchesInfo"></div>
+
+
+</body>
+</html>
