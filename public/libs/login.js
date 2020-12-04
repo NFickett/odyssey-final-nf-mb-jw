@@ -3,6 +3,9 @@ var imageLink = document.createElement('img');
 function login(){
     window.open("https://odyssey-final-nf-mb-jw.azurewebsites.net/.auth/login/google/callback")
 }
+function logout(){
+    window.open("https://odyssey-final-nf-mb-jw.azurewebsites.net/.auth/logout/")
+}
 
 function getEmail(){
     var ourRequest = new XMLHttpRequest();
@@ -33,8 +36,3 @@ function getImage(){
     };
     ourRequest.send();
 };
-
-function postImage(){
-    console.log(imageLink.src)
-    document.getElementById("imageTest").appendChild(imageLink);
-}
