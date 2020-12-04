@@ -22,7 +22,7 @@ function getImage(){
     ourRequest.onload = function(){
         userData = JSON.parse(ourRequest.responseText);
         for(i = 0; userData[0].user_claims[i]; i++){
-            if (userData[0].user_claims[i].typ = "picture"){
+            if (userData[0].user_claims[i].typ == "picture"){
                 imageLink.src = userData[0].user_claims[i].val
                 console.log(userData[0].user_claims[i].val)
             }else{}
