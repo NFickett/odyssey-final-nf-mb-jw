@@ -26,6 +26,7 @@ function getImage(){
                 imageLink.src = userData[0].user_claims[i].val
                 console.log(userData[0].user_claims[i].val)
             }
+            return;
         }
         document.getElementById("imageTest").appendChild(imageLink);
     };
