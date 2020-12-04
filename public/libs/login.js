@@ -1,3 +1,5 @@
+var imageLink = document.createElement('img');
+
 function login(){
     window.open("https://odyssey-final-nf-mb-jw.azurewebsites.net/.auth/login/google/callback")
 }
@@ -16,7 +18,7 @@ function getEmail(){
 
 function getImage(){
     
-    var imageLink = document.createElement('img');
+   
     var ourRequest = new XMLHttpRequest();
     ourRequest.open('GET','https://odyssey-final-nf-mb-jw.azurewebsites.net/.auth/me');
     ourRequest.onload = function(){
@@ -31,3 +33,7 @@ function getImage(){
     };
     ourRequest.send();
 };
+
+function postImage(){
+    document.getElementById("imageTest").appendChild(imageLink);
+}
