@@ -4,7 +4,7 @@ function login(){
     window.open("https://odyssey-final-nf-mb-jw.azurewebsites.net/.auth/login/google/callback")
 }
 function logout(){
-    window.open("https://odyssey-final-nf-mb-jw.azurewebsites.net/.auth/logout/")
+    window.open("https://odyssey-final-nf-mb-jw.azurewebsites.net/.auth/logout/google/callback")
 }
 
 function getEmail(){
