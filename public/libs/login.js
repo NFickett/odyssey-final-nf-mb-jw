@@ -1,10 +1,10 @@
 var imageLink = document.createElement('img');
 
 function login(){
-    window.open("https://odyssey-final-nf-mb-jw.azurewebsites.net/.auth/login/google")
+    window.open("https://odyssey-final-nf-mb-jw.azurewebsites.net/.auth/login/google?post_logout_redirect_uri=/index.html")
 }
 function logout(){
-    window.open("https://odyssey-final-nf-mb-jw.azurewebsites.net/.auth/logout")
+    window.open("https://odyssey-final-nf-mb-jw.azurewebsites.net/.auth/logout?post_logout_redirect_uri=/index.html")
 }
 
 function getEmail(){
