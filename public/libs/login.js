@@ -35,5 +35,6 @@ function getImage(){
 };
 
 function postImage(){
+    console.log(imageLink.src)
     document.getElementById("imageTest").appendChild(imageLink);
 }
