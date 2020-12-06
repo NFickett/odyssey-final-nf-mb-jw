@@ -1,3 +1,26 @@
-h1{
-    text-align: center;
+.navbar-custom {
+    background-color: #ff8b2b;
 }
+
+img{
+    width: 40%;
+}
+.navbar-brand{
+    font-family: "Bebas Neue";
+    font-size: 2.5rem;
+}
+
+.nav-item {
+    padding: 0 17px;
+  }
+  
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Roboto Mono";
+    font-weight: 100;
+  }
+
+   body{
+    font-family: "Bebas Neue";
+    color: grey;
+   }
