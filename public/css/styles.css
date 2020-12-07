@@ -1,0 +1,49 @@
+.navbar-custom {
+    background-color: #ff8b2b;
+}
+
+img{
+    width: 30%;
+    height: auto;
+}
+.navbar-brand{
+    font-family: "Bebas Neue";
+    font-size: 2rem;
+}
+
+.nav-item {
+    padding: 0 17px;
+  }
+  
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Roboto Mono";
+    font-weight: 100;
+  }
+
+  .logo{
+
+  }
+   body{
+    font-family: "Bebas Neue";
+    color: grey;
+   }
+
+   #news-area{
+       background-color: #ff8b2b;
+   }
+
+   .news-image {
+    width: 60%;
+    margin: auto;
+    /* border-radius: 100%; */
+    margin: 20px;
+    text-align: center;
+  }
+
+  .news-text {
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 900;
+    text-align: center;
+  }
