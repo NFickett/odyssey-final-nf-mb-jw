@@ -28,3 +28,22 @@ img{
     font-family: "Bebas Neue";
     color: grey;
    }
+
+   #news-area{
+       background-color: #ff8b2b;
+   }
+
+   .news-image {
+    width: auto;
+    margin: auto;
+    /* border-radius: 100%; */
+    margin: 20px;
+    text-align: center;
+  }
+
+  .news-text {
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 900;
+    text-align: center;
+  }
