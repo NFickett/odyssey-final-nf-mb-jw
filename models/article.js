@@ -43,7 +43,7 @@ articleSchema.pre('validate',function(next) {
     }
 
     if(this.markdown){
-        this.sanitizedHtml = dompurify.sanitize(marked(this.markdown))
+        this.sanitizedHtml = dompurify.sanitize(marked(this.markdown)) //adds markdown and security to html
     }
 
     next()
