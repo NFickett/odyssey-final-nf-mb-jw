@@ -1,5 +1,5 @@
 function login(){
-    window.open("https://odyssey-final-nf-mb-jw.azurewebsites.net/.auth/login/google?post_login_redirect_url=/home-page.html","_self")
+    window.open("https://odyssey-final-nf-mb-jw.azurewebsites.net/.auth/login/google?post_login_redirect_url=/home-page","_self")
 }
 function logout(){
     window.open("https://odyssey-final-nf-mb-jw.azurewebsites.net/.auth/logout?post_logout_redirect_uri=/home-page.html","_self")

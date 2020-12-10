@@ -7,8 +7,8 @@ const app = express()
 
 app.use(express.static(__dirname + '/public'))
 
-
-mongoose.connect('mongodb://localhost/blog', {
+//Connetion to mongodb
+mongoose.connect('mongodb+srv://test-user:user1234@cluster0.jdj0v.mongodb.net/submissions', {
   useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true
 })
 
@@ -16,19 +16,17 @@ app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: false }))
 app.use(methodOverride('_method'))
 
-// app.get('*',(req,res) => {
-//   res.render('home-page')
-// })
+//Renders home page 
+app.get('/', (req, res) => {
+    res.render('home-page');
+  })
 
-//Root route of app
-app.get('/', async (req, res) => {
+//Rooutes to forum pages
+app.get('/forum', async (req, res) => {
   const articles = await Article.find().sort({ createdAt: 'desc' })
   res.render('articles/index', { articles: articles })
 })
 
-// app.get('/home', (req, res) => {
-//     res.render('home-page');
-//   })
 
 app.use('/articles', articleRouter)
 

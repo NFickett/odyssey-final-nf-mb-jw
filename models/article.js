@@ -5,6 +5,7 @@ const createDomPurify= require('dompurify')
 const { JSDOM } = require('jsdom')
 const dompurify = createDomPurify(new JSDOM().window)
 
+//Structures the requirements of a post 
 const articleSchema = new mongoose.Schema ({
     title: {
         type: String, 
@@ -34,6 +35,7 @@ const articleSchema = new mongoose.Schema ({
      
 })
 
+//Validates
 articleSchema.pre('validate',function(next) {
     if(this.title) {
         this.slug = slugify(this.title, { lower: true, 

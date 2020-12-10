@@ -9,14 +9,14 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    <title>Blog</title>
+    <title>Forum</title>
   </head>
   <body>
    <div class="container">
      <h1 class="mb-4"><%= article.title %> </h1>
      <div> <%= article.createdAt.toLocaleDateString() %> 
     </div>
-     <a href="/" class="btn btn-secondary">All Articles</a>
+     <a href="/forum" class="btn btn-secondary">See All Posts</a>
      <a href="/articles/edit/<%= article.id %>" class="btn btn-info">Edit</a>
     
      <div>
