@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/public/home-page.html'));
 })
 
-//Rooutes to forum pages
+//Routes to forum pages
 app.get('/forum', async (req, res) => {
   const articles = await Article.find().sort({ createdAt: 'desc' })
   res.render('articles/index', { articles: articles })
