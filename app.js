@@ -11,7 +11,7 @@ app.use(express.static(__dirname + '/public'))
 //environment variable for db
 const URL = process.env.ATLAS_URL
 
-//Connetion to mongodb
+//Connection to mongodb
 mongoose.connect(URL, {
   useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true
 })
