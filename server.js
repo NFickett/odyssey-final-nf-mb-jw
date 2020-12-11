@@ -1,14 +1,19 @@
 const express = require('express')
 const mongoose = require('mongoose')
+require('dotenv').config()
 const Article = require('./models/article')
 const articleRouter = require('./routes/articles')
 const methodOverride = require('method-override')
+
 const app = express()
 
 app.use(express.static(__dirname + '/public'))
 
+//Environment variable for mongodb atlas
+const uri = process.env.ATLAS_URL;
+
 //Connetion to mongodb
-mongoose.connect('mongodb+srv://test-user:user1234@cluster0.jdj0v.mongodb.net/submissions', {
+mongoose.connect(uri, {
   useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true
 })
 
