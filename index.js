@@ -4,10 +4,16 @@ var path = require('path');
 const port = process.env.PORT || 3000
 app.use(express.static(__dirname + '/public'))
 
+app.set('view engine', 'ejs')
+app.use(express.urlencoded({ extended: false }))
+
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/public/home-page.html'));
 })
 
+app.get('/forum',(req,res) => {
+  res.render('articles/index')
+})
 
 // custom 404 page
 app.use((req, res) => {
