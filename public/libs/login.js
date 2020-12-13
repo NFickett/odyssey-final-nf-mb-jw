@@ -1,6 +1,10 @@
+
+
+//Simple function that just opens the login window and redirects to the home page
 function login(){
     window.open("https://odyssey-final-nf-mb-jw.azurewebsites.net/.auth/login/google?post_login_redirect_url=/home-page.html","_self")
 }
+//simple function that just logs the user out, and 
 function logout(){
     window.open("https://odyssey-final-nf-mb-jw.azurewebsites.net/.auth/logout?post_logout_redirect_uri=/home-page.html","_self")
 }

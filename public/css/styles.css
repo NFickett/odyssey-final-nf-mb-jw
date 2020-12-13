@@ -20,10 +20,6 @@ img{
     font-family: "Roboto Mono";
     font-weight: 100;
   }
-
-  .logo{
-
-  }
    body{
     font-family: "Bebas Neue";
     color: grey;
@@ -47,3 +43,65 @@ img{
     font-weight: 900;
     text-align: center;
   }
+
+  .container{
+    overflow-y: hidden;
+  }
+  .center{
+    overflow: hidden;
+    margin:auto;
+    width:75%;
+  }
+  .clndr-previous-button,
+ .clndr-next-button {
+    cursor: pointer;
+    -webkit-user-select: none;
+    /* Chrome/Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+ */
+  }
+
+  .day{
+    height:10vh;
+  }
+  .header-days {
+    height: 30px;
+    font-size: 15px;
+    background: #ff8b2b;
+  }
+
+  .day:hover {
+    background: #eee;
+  }
+
+  .today {
+    background: #9AD6E3;
+  }
+
+  .today:hover {
+    background: #72c6d8;
+  }
+
+.day.today.event {
+    background: #a7dbc1;
+  }
+
+.day.event {
+  background: #B4E09F;
+}
+
+.day.event:hover {
+  background: #96d478;
+}
+
+.day.inactive{
+  background: #ddd;
+}
+
+.empty,
+.adjacent-month{
+
+  background: #eee;
+}

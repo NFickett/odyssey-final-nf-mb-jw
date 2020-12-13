@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "clndr": "^1.5.1",
+    "express": "^4.17.1",
+    "underscore": "^1.12.0"
   }
 }
