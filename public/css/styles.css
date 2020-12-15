@@ -105,3 +105,13 @@ img{
 
   background: #eee;
 }
+
+/* Previous matches*/
+#matchesInfo.table{
+  margin:auto;
+}
+
+.centerTable{
+  margin: auto;
+width: 50%;
+}
