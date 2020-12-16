@@ -19,23 +19,62 @@
     <script src = 'libs/previous-matches.js'></script>
 </head>
 <body onload = "loadLeagues()">
-    <h1>Home Page</h1>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <a class="navbar-brand" href="#"><img src="../images/odyssey-logo.png" alt="">Odyssey</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="home-page.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="calendar.html">Calendar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="previous-matches.html">Previous Matches</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="team-page.html">Team</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="forum-page.html">Forum</a>
+          </li>
+      </ul>
+    </div>
+    <button onclick="login()">Login</button>
+    <button onclick="logout()">Log Out</button>
+  </nav>
+
+  <div class="container-fluid text-center">
+    <h1>Previous Matches</h1>
+
+    <div class="d-inline-flex mx-auto">
     <h3>League select</h3>
     <select id = "leaguesSelect" onchange="loadSeries()"> </select>
     <div id = "leagueInfo"></div>
+  </div>
 
+  <div class="d-inline-flex mx-auto">
     <h3>Series Select</h3>
     <select id = "seriesSelect" onchange="loadTournaments()"> </select>
     <div id = "seriesInfo"></div>
+  </div>
 
+  <div class="d-inline-flex mx-auto" >
     <h3>Tournament Select</h3>
     <select id = "tournamentSelect" onchange="loadMatches()"> </select>
     <div id = "tournamentInfo"></div>
+  </div>
 
+  <div class="text-center">
     <h3>Matches</h3>
     <div id = "matcheStatus"></div>
-    <div id = "matchesInfo" class="table"></div>
-
-
+    <div class="centerTable">
+      <div id = "matchesInfo" class="table table-bordered"></div>
+  </div>
+</div>
+  </div>
 </body>
 </html>

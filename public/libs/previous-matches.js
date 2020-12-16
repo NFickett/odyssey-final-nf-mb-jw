@@ -9,7 +9,7 @@
 //similarly when you you select a series and tournament, Finally when the tournament is selected
 //a table will generate with all the matches from that tournament.
 
-const API_KEY = "?token=-wT5U3k_8APimS4Imb-23ieRQX2xXbo1MmmJF0zMwX3Ajnbsezk";
+const API_KEY = "token=-wT5U3k_8APimS4Imb-23ieRQX2xXbo1MmmJF0zMwX3Ajnbsezk";
 const PROXY_URL = "https://cors-anywhere.herokuapp.com/";
 var leagues;
 var series;
@@ -17,7 +17,7 @@ var tournaments;
 
 function loadLeagues(){
     var indexRequest = new XMLHttpRequest();
-    indexRequest.open('GET', PROXY_URL+'https://api.pandascore.co/ow/leagues' + API_KEY);
+    indexRequest.open('GET', PROXY_URL+'https://api.pandascore.co/ow/leagues?' + API_KEY);
     indexRequest.onload = function() {
         leagues = JSON.parse(indexRequest.responseText);
         for(i = 0; i < leagues.length; i++){
@@ -52,7 +52,7 @@ function loadTournaments(){
     var selectedSeriesTournaments = [];
     var indexRequest = new XMLHttpRequest();
     document.getElementById('tournamentSelect').length = 0;
-    indexRequest.open('GET', PROXY_URL+'https://api.pandascore.co/ow/series' + API_KEY);
+    indexRequest.open('GET', PROXY_URL+'https://api.pandascore.co/ow/series?' + API_KEY);
     indexRequest.onload = function() {
         series = JSON.parse(indexRequest.responseText);
         for(i = 0; i < series.length; i++){
@@ -76,7 +76,7 @@ function loadMatches(){
     var selectedTournamentMatches = [];
     var indexRequest = new XMLHttpRequest();
     document.getElementById('matchesInfo').value = "";
-    indexRequest.open('GET', PROXY_URL+'https://api.pandascore.co/ow/tournaments' + API_KEY);
+    indexRequest.open('GET', PROXY_URL+'https://api.pandascore.co/ow/tournaments?' + API_KEY);
     indexRequest.onload = function() {
         tournaments = JSON.parse(indexRequest.responseText);
         for(i = 0; i < tournaments.length; i++){
