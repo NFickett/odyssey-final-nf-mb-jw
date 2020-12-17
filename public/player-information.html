@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <div class="tab">
+        <button class="tablinks" onclick="changeTab(event, 'Player Information')">Player Information</button>
+        <button class="tablinks" onclick="changeTab(event, 'RStats')">Role Stats</button>
+        <button class="tablinks" onclick="changeTab(event, 'LGStats')">Last Game Stats</button>
+        <button class="tablinks" onclick="increaseId()">Next Player</button>
+        <button class="tablinks" onclick="decreaseId()">Previous Player</button>
+      </div>
+      <div class="frame">
+        <img id="playerImage">
+      </div>
+      <div id="Player Information" class="tabcontent">
+        <h3><div id="name"> </div></h3>
+        <p><div id="pName"> </div></p>
+        <p><div id="team"> </div></p>
+        <p><div id="hometown"> </div></p>
+        <p><div id="birth"> </div></p>
+        <p><div id="role"> </div></p>
+        <p><div id="hero"> </div></p>
+      </div>
+      
+      
+      <div id="RStats" class="tabcontent">
+        <h3><div id="roleH"> </div></h3>
+        <div class="frame">
+            <img id="playerImage">
+          </div>
+          <p><div id="primaryInfoA"> </div></p>
+          <p><div id="primaryInfoB"> </div></p>
+          <p><div id="primaryInfoC"> </div></p>
+          <p><div id="secondaryInfoA"> </div></p>
+          <p><div id="secondaryInfoB"> </div></p>
+          <p><div id="secondaryInfoC"> </div></p>
+      </div>
+      
+      <div id="LGStats" class="tabcontent">
+        <h3><div id="roleHL"> </div></h3>
+        <p><div id="primaryInfoAL"> </div></p>
+          <p><div id="primaryInfoBL"> </div></p>
+          <p><div id="primaryInfoCL"> </div></p>
+          <p><div id="secondaryInfoAL"> </div></p>
+          <p><div id="secondaryInfoBL"> </div></p>
+          <p><div id="secondaryInfoCL"> </div></p>
+      </div>
+    <link rel="stylesheet" href="css/player-information-css.css">
+
+    <head>
+        <title>Testing For Final</title>
+        <script src="libs/player-information-js.js"></script>
+    </head>
+    <body onload="intro()">
+
+    </body>
+    
+
+</html>
