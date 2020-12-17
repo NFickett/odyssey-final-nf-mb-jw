@@ -158,11 +158,15 @@ function playGame()
         document.getElementById("r3g1u").innerHTML = teamListArrR3[0].name + "   3" ;
         document.getElementById("r3g1l").innerHTML = teamListArrR3[1].name + "   " + (3-winner);
         document.getElementById("r3g1u").style.fontWeight = "900";
+        document.getElementById("winner").innerHTML = teamListArrR3[0].name;
+        document.getElementById("winner").style.fontWeight = "1000";
     }
     else 
     {
         document.getElementById("r3g1l").innerHTML = teamListArrR3[1].name + "   3" ;
         document.getElementById("r3g1u").innerHTML = teamListArrR3[0].name + "   " + (3+winner);
         document.getElementById("r3g1l").style.fontWeight = "900";
+        document.getElementById("winner").innerHTML = teamListArrR3[1].name;
+        document.getElementById("winner").style.fontWeight = "1000";
     }
 }
